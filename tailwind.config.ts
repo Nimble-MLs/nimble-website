@@ -18,6 +18,18 @@ const config: Config = {
       boska: ["Boska", "sans-serif"],
       switzer: ["Switzer", "sans-serif"],
     },
+    colors: {
+      transparent: "transparent",
+      primary: "#edfffe",
+      secondary: "#14deda",
+      darkSecondary: '#14A19E',
+      tertiary: "#dfdfdf",
+      darkTertiary: '#7C7C7C',
+      dark: "#131313",
+      light: "#444544",
+      white: "#fff",
+
+    },
   },
   plugins: [],
 };
