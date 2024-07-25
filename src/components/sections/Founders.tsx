@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Founders = () => {
 	return (
 		<div className="flex flex-col justify-center min-h-screen">
@@ -6,10 +8,12 @@ const Founders = () => {
 			</h1>
 			<div className="flex justify-center items-center md:flex-row flex-col gap-32">
 				<div className="border border-dark md:px-16 px-3 py-7 flex flex-col justify-center items-center">
-					<img
+					<Image
 						src="https://avatars.githubusercontent.com/u/10406286?v=4"
 						alt="Nimble Founder"
-						className="h-72"
+						className="w-72"
+						width={288}
+						height={288}
 					/>
 					<h3 className="font-boska md:text-5xl text-2xl font-medium mt-10 mb-5">
 						Chris Colley
@@ -19,10 +23,11 @@ const Founders = () => {
 					</h4>
 				</div>
 				<div className="border border-dark md:px-16 px-3 py-7 flex flex-col justify-center items-center">
-					<img
+					<Image
 						src="https://avatars.githubusercontent.com/u/10406286?v=4"
 						alt="Nimble Founder"
-						className="h-72"
+						width={288}
+						height={288}
 					/>
 					<h3 className="font-boska md:text-5xl text-2xl font-medium mt-10 mb-5">
 						Ash Bhatia

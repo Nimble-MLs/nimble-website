@@ -16,8 +16,8 @@ const AboutUs = () => {
 			</div>
 			<div className="border border-dark border-t-0 md:px-16 px-3 py-7">
 				<h3 className="font-boska md:text-6xl text-2xl font-medium">
-					That's why we created Nimble. We combine unparalleled industry
-					insight and leading-edge technology to alleviate firms'
+					That&apos;s why we created Nimble. We combine unparalleled industry
+					insight and leading-edge technology to alleviate firms&apos;
 					regulatory burden.
 				</h3>
 			</div>

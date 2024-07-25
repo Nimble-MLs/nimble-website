@@ -9,7 +9,7 @@ const HeroSection = () => {
 					<span className="text-darkSecondary">Automation</span>
 				</h1>
 				<h3 className="font-switzer md:text-3xl text-xl font-light md:my-5 my-2">
-					Unlocking teams' productivity with generative AI
+					Unlocking teams&apos; productivity with generative AI
 				</h3>
                 <Button text="EARLY ACCESS" path="#" />
 			</div>

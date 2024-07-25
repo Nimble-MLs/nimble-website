@@ -6,7 +6,7 @@ const Product = () => {
 			<h1 className="font-boska md:text-8xl text-3xl font-bold text-dark opacity-30 my-10">
 				Product
 			</h1>
-            <h2 className="font-boska text-dark md:text-6xl text-2xl font-medium md:my-5 my-2">Nimble alleviates firms' regulatory burden</h2>
+            <h2 className="font-boska text-dark md:text-6xl text-2xl font-medium md:my-5 my-2">Nimble alleviates firms&apos; regulatory burden</h2>
             <h3 className="font-switzer md:text-3xl text-lg font-light mt-5 leading-relaxed tracking-wider">
             Nimble generates reports, such as SARs, from unstructured research — and augments the output with intelligent prompts.</h3>
             <h2 className="font-boska text-dark md:text-6xl text-2xl font-medium md:mt-20 my-2">Bottom-line benefits</h2>
