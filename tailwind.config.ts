@@ -15,8 +15,7 @@ const config: Config = {
       },
     },
     fontFamily: {
-      boska: ["Boska", "sans-serif"],
-      switzer: ["Switzer", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
     },
     colors: {
       transparent: "transparent",
