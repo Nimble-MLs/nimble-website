@@ -1,12 +1,15 @@
 import { traceGlobals } from "next/dist/trace/shared";
+"use client";
+import Link from "next/link";
 
 export default function About() {
   const teamMembers = [
         {
             name: "Ash Bhatia",
-            role: "Product & Engineering Lead",
+            role: "Product & Engineering",
             tagline:"Build products that customers love and you are proud of.",
             description: "Developing and executing on the mission for SAAS firms in EMEA. Bringing hands on experience across all parts of a product firm at various stages (Series B to post IPO).",
+            linkedinurl:"https://www.linkedin.com/in/bhatiaash/"
         },
         /*
          {
@@ -44,16 +47,17 @@ export default function About() {
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
-                            className="member bg-white 
-                                       shadow-md rounded-lg p-4 w-60
-                                       h-180 flex flex-col items-center
-                                       justify-top text-center "
+                            className="member bg-secondary bg-opacity-40 
+                                       rounded-lg p-4 max-w-80
+                                       h-180 flex flex-col items-center text-wrap
+                                       justify-top text-center"
                         >
-                            <h3 className="text-xl font-bold">{member.name}</h3>
-                            <h4 className="text-lg">{member.role}</h4>
-                            <h5 className="text-sm text-darkTertiary">{member.tagline}</h5>
-                            <p className="text-sml p-4">{member.description}</p>
-                             
+                            <a href={member.linkedinurl} target="_blank">
+                                <h3 className="text-xl font-bold">{member.name}</h3>
+                                <h4 className="text-lg">{member.role}</h4>
+                                <h5 className="text-lg font-semibold text-darkTertiary leading-none">{member.tagline}</h5>
+                                <p className="text-sm p-4 text-opacity-80">{member.description}</p>
+                            </a>
                         </div>
                     ))}
                 </div>

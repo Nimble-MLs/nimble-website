@@ -22,9 +22,9 @@ const Navbar = () => {
         </button>
         <nav className={`absolute md:static top-full left-0 w-full bg-primary md:w-auto md:flex ${open ? "block" : "hidden"}`}> 
           <ul className="flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 text-lg">
-            <li className="py-1 md:py-0"><Link href="/" className="hover:text-secondary" onClick={() => setOpen(false)}>Home</Link></li>
-            <li className="py-1 md:py-0"><Link href="/about" className="hover:text-secondary" onClick={() => setOpen(false)}>About</Link></li>
-            <li className="py-1 md:py-0"><Link href="/contact" className="hover:text-secondary" onClick={() => setOpen(false)}>Contact</Link></li>
+            <li className="py-1 md:py-0"><Link href="/" className="hover:text-secondary font-boska " onClick={() => setOpen(false)}>Home</Link></li>
+            <li className="py-1 md:py-0"><Link href="/about" className="hover:text-secondary font-boska " onClick={() => setOpen(false)}>About</Link></li>
+            <li className="py-1 md:py-0"><Link href="/contact" className="hover:text-secondary font-boska " onClick={() => setOpen(false)}>Contact</Link></li>
           </ul>
         </nav>
       </div>

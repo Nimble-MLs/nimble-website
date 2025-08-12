@@ -18,6 +18,7 @@ const config: Config = {
     fontFamily: {
         boska: ['Boska', 'serif'],
         switzer: ['Switzer', 'sans-serif'],
+        poppins: ['Poppins, sans-serif'],
     },
     colors: {
       transparent: "transparent",

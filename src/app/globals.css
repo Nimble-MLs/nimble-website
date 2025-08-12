@@ -26,7 +26,7 @@
 
 /* Apply Switzer globally */
 body, p, li, form {
-  @apply font-boska text-darkSecondary text-lg;
+  @apply font-switzer text-darkSecondary text-opacity-80;
 }
 
 /* Apply Boska to all headings */
