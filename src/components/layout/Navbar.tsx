@@ -5,10 +5,10 @@ import { useState } from "react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="bg-primary sticky top-0 z-50 border-b border-dark">
+    <header className="bg-primary sticky top-0">
       <div className="max-w-5xl mx-auto flex items-center justify-between p-4">
-        <Link href="/" className="flex items-center gap-2 text-2xl font-semibold text-dark">
-          <span role="img" aria-label="kiwi" className="text-3xl">🥝</span>
+        <Link href="/" className="flex items-center gap-2 text-2xl font-boska text-dark">
+          <img src="/logo.png" alt="logo" width={50} height={50} />
           Nimble.
         </Link>
         <button

@@ -1,3 +1,4 @@
+import { Poppins } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,16 +16,20 @@ const config: Config = {
       },
     },
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
+        boska: ['Boska', 'serif'],
+        switzer: ['Switzer', 'sans-serif'],
     },
     colors: {
       transparent: "transparent",
-      primary: "#edfffe",
-      secondary: "#14deda",
-      darkSecondary: '#14A19E',
-      tertiary: "#dfdfdf",
-      darkTertiary: '#7C7C7C',
-      dark: "#131313",
+      
+      primary: "#D5FAF1",
+      secondary: "#BBE5FC",
+      tertiary: "#FFD1D6",
+      
+      dark: "black",
+      darkSecondary: '#242038',
+      darkTertiary: '#38BCA6',
+      
       light: "#444544",
       white: "#fff",
 
@@ -32,4 +37,6 @@ const config: Config = {
   },
   plugins: [],
 };
+
+
 export default config;

@@ -1,11 +1,11 @@
-import Hero from "@/components/sections/Hero";
-import Highlights from "@/components/sections/Highlights";
+import Intro from "@/components/sections/Intro";
+import RecentWork from "@/components/sections/RecentWork";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <Highlights />
+      <Intro />
+      <RecentWork />
     </main>
   );
 }

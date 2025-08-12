@@ -2,12 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-primary text-dark;
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+/* Load Boska font */
+@font-face {
+  font-family: 'Boska';
+  src: url('/fonts/Boska-Variable.ttf') format('truetype');
+  font-weight: 100 900; /* full variable range */
+  font-display: swap;
+}
+
+/* Load Switzer font */
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* Apply Switzer globally */
+body, p, li, form {
+  @apply font-boska text-darkSecondary text-lg;
+}
+
+/* Apply Boska to all headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-boska text-dark;
+}
+
+.pageHeader {
+  @apply text-3xl font-semibold text-center mb-6;
 }
