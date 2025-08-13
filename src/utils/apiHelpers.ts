@@ -4,7 +4,7 @@ export async function sendContactForm(data: { name: string; email: string; messa
    // URL = "test"
     
     const bodyMessage = {
-      content: `Received contact form submission on Nimnle.kiwi \n\n\nName: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`
+      content: `Received contact form submission on Nimble.kiwi \nName: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`
     };
     
 
