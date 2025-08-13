@@ -41,9 +41,14 @@ export default function About() {
     return (
             <div className="py-8">
                 <h2 className="pageHeader text-center">A bit about the team</h2>
+                <p className="text-center max-w-3xl mx-auto mt-4 mb-10 md:mb-12 text-darkTertiary">
+                    Started Nimble two years ago. Since then, we’ve shipped products end-to-end,
+                    helped founders validate ideas, and partnered with teams to do genuinely epic
+                    things. We move fast, keep things simple, and obsess over outcomes.
+                </p>
    
                 <div className="flex flex-wrap 
-                                justify-center gap-6">
+                                justify-center gap-6 mt-8 md:mt-10">
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
