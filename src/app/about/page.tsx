@@ -29,23 +29,25 @@ export default function About() {
             role: "Product Management",
             tagline: "Loves pestering you with the right questions",
             description:"True hustle mindset. Tasked to uncover user pain points, validate assumptions, and facilitate data-informed product decisions",
+            linkedinurl:"https://www.linkedin.com/in/affan-ibn-hisham-6015aa199/"
         },
         {
             name: "Mo Sami",
             role: "Full Stack Developer",
             tagline: "Everything is bite sized. Including a data migration into Mongo within 1 month.",
-            description: "Building SAAS platforms from scratch. Experience with Flutter, Typescrript, GCP, MongoDB, Hasura GraphQL, PostgresSQL and Firebase."
+            description: "Building SAAS platforms from scratch. Experience with Flutter, Typescrript, GCP, MongoDB, Hasura GraphQL, PostgresSQL and Firebase.",
+            linkedinurl:"https://www.linkedin.com/in/mohammadsamishaikh/"
         }
     ];
 
     return (
             <div className="py-8">
                 <h2 className="pageHeader text-center">A bit about the team</h2>
-                <p className="text-center max-w-3xl mx-auto mt-4 mb-10 md:mb-12 text-darkTertiary">
+                {/* <p className="text-center max-w-3xl mx-auto mt-4 mb-10 md:mb-12 text-darkTertiary">
                     Started Nimble two years ago. Since then, we’ve shipped products end-to-end,
                     helped founders validate ideas, and partnered with teams to do genuinely epic
                     things. We move fast, keep things simple, and obsess over outcomes.
-                </p>
+                </p> */}
    
                 <div className="flex flex-wrap 
                                 justify-center gap-6 mt-8 md:mt-10">
