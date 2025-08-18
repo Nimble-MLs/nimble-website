@@ -17,13 +17,13 @@ export default function About() {
             role: "Customer Success Lead",
             tagline: "Domain expert in all things Strategy, Customers, and Marketing",
             description: "Brand building positions in multiple FCMGs and food businesses across the UK, Europe, Middle East and Asia",
-        },
+        },*/
         {
             name: "Sunil Lath",
             role: "Full Stack Engineering Lead",
             tagline: "Python, React and even Wildlife. Its all a breezey forest walk",
             description: "Enterprise engineering leader with 18+ years experience running specialised teams. Experience building software for Climate, Healthcare and Finance.",
-        },*/
+        },
         {
             name: "Affan Tanke",
             role: "Product Management",
@@ -49,13 +49,13 @@ export default function About() {
                     things. We move fast, keep things simple, and obsess over outcomes.
                 </p> */}
    
-                <div className="flex flex-wrap 
-                                justify-center gap-6 mt-8 md:mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 
+                                gap-6 mt-8 md:mt-10 max-w-6xl mx-auto">
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
                             className="member bg-secondary bg-opacity-40 
-                                       rounded-lg p-4 max-w-80
+                                       rounded-lg p-4
                                        h-180 flex flex-col items-center text-wrap
                                        justify-top text-center"
                         >
