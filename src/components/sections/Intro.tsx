@@ -27,7 +27,7 @@ const Intro = () => {
       {/* Content */}
       <div className="space-y-8 max-w-4xl">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-balance">
-          Navigate your company's terrain with Nimble footwork.
+          Navigate your company&apos;s terrain with Nimble footwork.
         </h1>
         <h2 className="text-2xl md:text-3xl text-darkSecondary/80">
         A boutique AI launch & advisory firm
