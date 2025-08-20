@@ -27,9 +27,15 @@ const Intro = () => {
       {/* Content */}
       <div className="space-y-8 max-w-4xl">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-balance">
-          We are a boutique helping organisations rapidly learn and adopt generative AI by coaching, enablement and product development.
+          Navigate your company's terrain with Nimble footwork.
         </h1>
+        <h2 className="text-2xl md:text-3xl text-darkSecondary/80">
+        A boutique AI launch & advisory firm
+        </h2>
+             
         <p className="text-lg md:text-xl text-darkSecondary/80 leading-relaxed">
+          We are a boutique helping organisations rapidly learn and adopt generative AI by coaching, enablement and product development.
+          <br className="hidden md:inline" /><br/>
           Whether it be for sales enablement, compliance automation or order management, we deliver practical tools that keep your business ahead of the curve. Our engineers have been crafting LLM solutions since 2023, when it first emerged. We have decades of experience rolling out emerging technologies into large complex organisations.
         </p>
       </div>
