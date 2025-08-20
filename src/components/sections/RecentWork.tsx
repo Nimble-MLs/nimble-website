@@ -3,7 +3,7 @@
 import { data } from "autoprefixer";
 import React, { useState } from "react";
 
-const dataResponse = [
+const projects = [
   {
     label: "Product Development",
     description:
@@ -36,11 +36,6 @@ const dataResponse = [
   },
 ];
 
-//const projects = dataResponse.sort(randFunc);
-function randFunc(a, b) {  
-  return 0.5 - Math.random();
-} 
-const projects = dataResponse;
 
 const RecentWork = () => {
 
