@@ -1,8 +1,9 @@
 "use client";
 
+import { data } from "autoprefixer";
 import React, { useState } from "react";
 
-const projects = [
+const dataResponse = [
   {
     label: "Product Development",
     description:
@@ -35,52 +36,41 @@ const projects = [
   },
 ];
 
-const RecentWork = () => {
-  const [index, setIndex] = useState(0);
+//const projects = dataResponse.sort(randFunc);
+function randFunc(a, b) {  
+  return 0.5 - Math.random();
+} 
+const projects = dataResponse;
 
-  const next = () => setIndex((prev) => (prev + 1) % projects.length);
-  const prev = () => setIndex((prev) => (prev - 1 + projects.length) % projects.length);
+const RecentWork = () => {
+
 
   return (
-    <section className="max-w-7xl mx-auto px-12 py-12">
-      <h2 className="text-2xl md:text-3xl font-boska text-dark text-center mb-6">
-        Recent Work
-      </h2>
+    <div className="py-8">
+      <h2 className="pageHeader text-center">Recent Work</h2>
 
-      <div className="relative">
-        <div className="overflow-hidden">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 md:mt-10
+                   max-w-6xl mx-auto"
+      >
+        {projects.map((project, index) => (
           <div
-            className="flex transition-transform duration-500"
-            style={{ transform: `translateX(-${index * 100}%)` }}
+            key={index}
+            className="bg-secondary/40 rounded-lg p-6
+                       flex flex-col items-center text-center
+                       min-h-[100px]" /* ensure consistent card height; adjust as needed */
           >
-            {projects.map((project, i) => (
-              <div key={i} className="w-full flex-shrink-0 px-4">
-                <div className="member bg-secondary bg-opacity-40 rounded-lg p-8 w-full flex flex-col items-stretch text-wrap justify-start text-left space-y-3">
-                  <h3 className="text-lg md:text-xl font-bold mb-1 text-center md:text-center">
-                    {project.label}
-                  </h3>
-                  <p className="text-sm text-opacity-80 px-1">{project.description}</p>
-                </div>
-              </div>
-            ))}
+            {/* TOP SECTION */}
+            <div className="space-y-2">
+              <p className="text-lg">{project.description}</p>
+            </div>
+            <p className="text-xs opacity-60 mt-auto pt-4 inline-flex justify-center">{project.label}</p>
+
+
           </div>
-        </div>
-        <button
-          aria-label="Previous project"
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-dark text-white px-3 py-1 rounded-full"
-          onClick={prev}
-        >
-          &#8592;
-        </button>
-        <button
-          aria-label="Next project"
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-dark text-white px-3 py-1 rounded-full"
-          onClick={next}
-        >
-          &#8594;
-        </button>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
