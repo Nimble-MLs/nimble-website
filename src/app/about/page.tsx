@@ -7,7 +7,7 @@ export default function About() {
         {
             name: "Ash Bhatia",
             role: "Product & Engineering",
-            tagline:"Build products that customers love and you are proud of.",
+            tagline:"Build products that customers love and you are proud of",
             description: "Developing and executing on the mission for SAAS firms in EMEA. Bringing hands on experience across all parts of a product firm at various stages (Series B to post IPO).",
             linkedinurl:"https://www.linkedin.com/in/bhatiaash/"
         },
@@ -23,6 +23,7 @@ export default function About() {
             role: "Full Stack Engineering Lead",
             tagline: "Python, React and even Wildlife. Its all a breezey forest walk",
             description: "Enterprise engineering leader with 18+ years experience running specialised teams. Experience building software for Climate, Healthcare and Finance.",
+            linkedinurl:"https://www.linkedin.com/in/sunil-lath/"
         },
         {
             name: "Affan Tanke",
@@ -40,34 +41,54 @@ export default function About() {
         }
     ];
 
-    return (
-            <div className="py-8">
-                <h2 className="pageHeader text-center">A bit about the team</h2>
-                {/* <p className="text-center max-w-3xl mx-auto mt-4 mb-10 md:mb-12 text-darkTertiary">
-                    Started Nimble two years ago. Since then, we’ve shipped products end-to-end,
-                    helped founders validate ideas, and partnered with teams to do genuinely epic
-                    things. We move fast, keep things simple, and obsess over outcomes.
-                </p> */}
-   
-                <div className="grid grid-cols-1 md:grid-cols-2 
-                                gap-6 mt-8 md:mt-10 max-w-6xl mx-auto">
-                    {teamMembers.map((member, index) => (
-                        <div
-                            key={index}
-                            className="member bg-secondary bg-opacity-40 
-                                       rounded-lg p-4
-                                       h-180 flex flex-col items-center text-wrap
-                                       justify-top text-center"
-                        >
-                            <a href={member.linkedinurl} target="_blank">
-                                <h3 className="text-xl font-bold">{member.name}</h3>
-                                <h4 className="text-lg">{member.role}</h4>
-                                <h5 className="text-lg font-semibold text-darkTertiary leading-none">{member.tagline}</h5>
-                                <p className="text-sm p-4 text-opacity-80">{member.description}</p>
-                            </a>
-                        </div>
-                    ))}
-                </div>
+    return  (
+    <div className="py-8">
+      <h2 className="pageHeader text-center">A bit about the team</h2>
+
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 md:mt-10
+                   max-w-6xl mx-auto"
+      >
+        {teamMembers.map((member, index) => (
+          <div
+            key={index}
+            className="bg-secondary/40 rounded-lg p-6
+                       flex flex-col items-center text-center
+                       min-h-[260px]" /* ensure consistent card height; adjust as needed */
+          >
+            {/* TOP SECTION */}
+            <div className="space-y-2">
+              <h3 className="text-xl font-bold">{member.name}</h3>
+              <h4 className="text-lg">{member.role}</h4>
+              <h5 className="text-lg font-semibold text-darkTertiary leading-none">
+                {member.tagline}
+              </h5>
+              <p className="text-sm px-4 text-opacity-80">
+                {member.description}
+              </p>
             </div>
-    );
+
+            {/* BOTTOM (PINNED) */}
+            {member.linkedinurl && (
+              <a
+                href={member.linkedinurl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-auto pt-4 inline-flex justify-center"
+                aria-label={`${member.name} on LinkedIn`}
+              >
+                <img
+                  src="/linkedIn_logo.png"
+                  alt=""
+                  width={20}
+                  height={20}
+                  className="block"
+                />
+              </a>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
